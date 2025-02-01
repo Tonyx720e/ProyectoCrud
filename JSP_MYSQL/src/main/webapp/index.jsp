@@ -24,16 +24,17 @@
         <h2>Menú principal</h2>
 
         <div class="botones-container"
-            <form action="action">
-                <input type="hidden">
-                <button type="submit">Mostrar usarios </button>
+             <form action="servletUsuario" method="get">
+                <a href="servletUsuario?action=mostrar"><button>Mostrar Usuario </button></a>
+
+                <a href="servletUsuario?action=modificar"><button>Modificar usuario </button></a>
+
+                <a href="servletUsuario?action=guardar"><button>Guardar Usuario </button></a>
+                <a href="servletUsuario?action=eliminar"><button>Eliminar Usuario </button></a>
+               
             </form>
 
-            <a href=""><button>Agrega  r usuario </button></a>
 
-            <a href=""><button>Modificar usuario </button></a>
-            
-            <a href=""><button>Eliminar usuario </button></a>
 
         </div>
     </body>

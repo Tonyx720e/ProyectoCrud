@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package entidades;
 
 /**
@@ -10,14 +7,14 @@ package entidades;
  */
 public class EntidadUsuario {
     private int id;
-    private String nombre;
+    private String nombres;
     private String apPaterno;
     private String apMaterno;
     private int edad;
 
-    public EntidadUsuario(int id, String nombre, String apPaterno, String apMaterno, int edad) {
+    public EntidadUsuario(int id, String nombres, String apPaterno, String apMaterno, int edad) {
         this.id = id;
-        this.nombre = nombre;
+        this.nombres = nombres;
         this.apPaterno = apPaterno;
         this.apMaterno = apMaterno;
         this.edad = edad;
@@ -35,11 +32,11 @@ public class EntidadUsuario {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String nombres) {
+        this.nombres = nombres;
     }
 
     public String getApPaterno() {

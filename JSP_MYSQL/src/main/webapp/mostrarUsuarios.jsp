@@ -4,6 +4,8 @@
     Author     : tonym
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="entidades.EntidadUsuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,17 +26,21 @@
                 <th>Edad</th>
             </tr>
 
-            <% 
-            
+            <%
+                List<EntidadUsuario> usuarios = (List<EntidadUsuario>) request.getAttribute("listausuarios");
+                for (EntidadUsuario usuario: usuarios) {
+                    
+
             %>
             <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
+                <td><%= usuario.getId() %></td>
+                <td><%= usuario.getNombre() %></td>
+                <td><%= usuario.getApPaterno() %></td>
+                <td><%= usuario.getApMaterno() %></td>
+                <td><%= usuario.getEdad() %></td>
             </tr>
-
+            <%                }
+            %>
         </table>
 
     </body>
